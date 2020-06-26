@@ -1,0 +1,420 @@
+body{
+	
+ 
+ 
+
+}
+
+#brand{
+	font-family: 'Dancing Script', cursive;
+	font-size: 30px;
+	color: black;
+}
+
+
+.container-fluid1{
+	text-align: center;
+	padding-top: 150px;
+	color: black;
+	
+}
+
+h1{
+	font-family: 'Amaranth', sans-serif;
+}
+
+p{
+	color: white;
+	line-height: 2;
+}
+h2{
+	font-size: 1rem;
+}
+
+/*hand animation*/
+span.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg) }
+   10% { transform: rotate(-10.0deg) }
+   20% { transform: rotate( 12.0deg) }
+   30% { transform: rotate(-10.0deg) }
+   40% { transform: rotate(  9.0deg) }
+   50% { transform: rotate(  0.0deg) }
+  100% { transform: rotate(  0.0deg) }
+}
+
+
+.buttons{
+	text-align: center;
+	padding-top: 20px
+
+	
+}
+
+
+#skills{
+	padding-top: 150px;
+	text-align: left;
+	position: absolute;
+	left: 700px;
+}
+
+#expertise{
+	padding-top: 250px;
+	text-align: left;
+	padding-left: 50px;
+	height: 500px;
+	width: 500px;
+	}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 50%;*/                      /******** <- Remove this line *********/
+  /*border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}*/
+
+
+
+.meter {
+    height: 20px;
+    position: relative;
+    background:white;
+    border-radius: 25px;
+    width: 900px;
+
+    }
+
+    .meter>span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #aaa5ff;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+#projects{
+	padding-top: 150px;
+	padding-left: 50px;
+}
+
+
+.project1{
+	padding-top: 25px;
+}
+
+#proficiency{
+	padding-left: 50px;
+}
+
+.project2{
+	padding-top: 50px;
+}
+
+.project3{
+	padding-top: 100px;
+}
+
+.blogs{
+	padding-top: 150px;
+	padding-left: 50px;
+}
+
+/*blog card*/
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+
+:root {
+  --color: #3c3163;
+  --transition-time: 0.5s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Open Sans';
+  background: #fafafa;
+}
+
+a {
+  color: inherit;
+}
+
+.cards-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 4rem;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.card {
+  font-family: 'Heebo';
+  --bg-filter-opacity: 0.5;
+  background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+  height: 20em;
+  width: 15em;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+  /*margin: 2em;*/
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em black;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 10px solid #ccc;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: rotate(0);
+}
+
+.card h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.card p {
+  font-size: 0.75em;
+  font-family: 'Open Sans';
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+.card .tags {
+  display: flex;
+}
+
+.card .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+.card:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+.card .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8;
+}
+
+.card:before, .card:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out;
+}
+
+.card:before {
+  background: #ddd;
+  width: 250%;
+  height: 250%;
+}
+
+.card:after {
+  background: #a0c334;
+  width: 200%;
+  height: 200%;
+}
+
+.card:hover {
+  color: var(--color);
+}
+
+.card:hover:before, .card:hover:after {
+  transform: scale(1);
+}
+
+.card-grid-space .num {
+  font-size: 3em;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
+}
+
+.info {
+  font-size: 1.2em;
+  display: flex;
+  padding: 1em 3em;
+  height: 3em;
+
+}
+
+.info img {
+  height: 3em;
+  margin-right: 0.5em;
+}
+
+.info h1 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1285px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .info {
+    justify-content: center;
+
+  }
+  .card-grid-space .num {
+    /margin-left: 0;
+    /text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards-wrapper {
+    padding: 4rem 2rem;
+  }
+  .card {
+    max-width: calc(100vw - 4rem);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+  .info h1 {
+    margin: 0;
+  }
+}
+
+#blogcover{
+	position: relative;
+	bottom: 25px;
+	padding-left: 700px;
+
+}
+
+#blogs{
+	position: relative;
+	top: 100px;
+}
+
+.contact{
+	text-align: center;
+}
+
+.phone,.email{
+	margin-top: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.socialmedia{
+	text-align: center;
+	margin-top: 1.5rem;
+
+}
+.github i {
+    background-color: #333;
+}
+.icon-button i {
+    color: #fff;
+    border-radius: 2.6rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 2.6rem;
+    margin: 0 5px 10px;
+}
+.linkedin i{
+	 background-color: #0e76a8;
+}
+.google i{
+	background-color: #ea4335;
+}
+
+.facebook i {
+    background-color: #3b5998;
+}
+
+#rightside{
+	font-family: 'Amaranth', sans-serif;
+	
+
+}
+
+.end{
+	text-align: center;
+	padding-top: 50px;
+}
+
+
