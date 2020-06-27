@@ -7,7 +7,7 @@
 		<!--bootstrap link-->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 		<!--icon-->
-		<link rel="icon"  href="suit.jpg">
+		<link rel="icon" type="image/png" sizes="64*64" href="circle-cropped.png">
 		<!--cursive font-->
 		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 		<!--Animations-->
@@ -29,15 +29,19 @@
 		<script src="https://www.amcharts.com/lib/4/core.js"></script>
 		<script src="https://www.amcharts.com/lib/4/charts.js"></script>
 		<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-		<!--cool background-->
+		<!--for site responsive-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body style="background-image: url('cool-background2.png'); color: white;" >
 		<!--title name-->
 		<section id="title">
-			<nav class="navbar navbar-light navbar-expand-lg ">
+			<nav class="navbar  navbar-light navbar-expand-lg ">
 				<a class="navbar-brand" id="brand" href="" style="color: white">< Goverdhan Biradar /></a>
 				
 				<!--top right corner-->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: white; color: white;">
+				<span class="navbar-toggler-icon"></span>
+				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto" id="rightside" >
 						<li class="nav-item">
@@ -61,20 +65,25 @@
 		</section>
 		<section id="name">
 			<div class="container-fluid1">
+				
 				<h1 style="font-size: 4rem; color: white;">Hi Iam, Goverdhan<span class="wave">👋</span></h1>
 				<h2 style="color: white">A Passionate Developer.</h2>
 				<p style="font-weight: 500;  color: white;">Having experience over Web devlopment, Game Development, Python, Pentesting, Data Science and other cool libraries and frameworks.</p>
 				
 			</div>
+		
 			<div class="buttons">
+				
 				<button onclick="location.href='#skillsection'" type="button" class="btn btn-outline-dark btn-lg download-button" style="margin:20px;  color: white;"> <i class="fas fa-briefcase"></i> Check Out My Work</button>
 				<button  type="button" class="btn btn-outline-dark btn-lg download-button" style="margin:20px;  color: white;"><i class="fas fa-download"></i> Download Resume</button>
 			</div>
+		
 		</section>
 		<section id= "skillsection">
+			
 			<section id="skills">
 				<div class="container-fluid2">
-					<h1 style="font-size: 3rem"> What I do</h1>
+					<h1 style="font-size: 3rem"> <u>What I do</u></h1>
 					<h2>I am a Developer.</h2>
 					
 					
@@ -133,7 +142,9 @@
 					</a>
 				</div>
 			</section>
+	
 		</section>
+
 		
 		<section id="proficiency">
 			<div class="Proficiency">
@@ -182,7 +193,7 @@
 				<h2 style="font-size: 2rem;">&#11088; <u>Occupy Mars</u></h2>
 				<h2 style="font-size: 1rem;padding-left: 50px"> A third person Game Developed using <u>Unreal Engine.</u></h2>
 				<p style="font-size: 1rem;padding-left: 50px">Description: Year 2025, A Robot has been sent by humans to civilise a city in Mars for the arrival of humans.</p>
-				<img src="occupymars.png" style="height: 400px; width: 800px;padding-left: 50px;">
+				<img src="occupymars.png" style="height: 400px; width: 800px;padding-left: 50px;" class="responsive">
 			</div>
 			<div class="project2">
 				<h2 style="font-size: 2rem;">&#11088; <u>NetBrok</u></h2>

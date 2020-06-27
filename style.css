@@ -418,3 +418,49 @@ a {
 }
 
 
+
+@media (max-width: 1028px){
+	#expertise{
+		position: static;
+		padding-left: 50px;
+		padding-top: 75px;
+	}
+	
+	#skills{
+		position: static;
+
+	}
+	
+	
+	.meter{
+		width: 100%;
+	}
+
+	#projects{
+		position: static;
+
+	}
+
+	.responsive {
+ 		
+ 		 max-width: 100%;
+ 		 height: auto;
+		
+ 		}
+ 		
+
+ 		.cards-wrapper{
+ 			width: 100%;
+ 			height: auto;
+ 			position: absolute;
+ 			right: 500px;
+ 			
+ 		}
+ 		.blogs{
+ 			position: relative;
+ 			bottom: 100px;
+
+ 		}
+}
+
+
